@@ -108,7 +108,7 @@ def train():
     model, optimizer_b, scheduler_b = accelerator.prepare(model, optimizer_b, scheduler_b)
 
     size = len(testloader)
-    early_stopping_patience = 10
+    early_stopping_patience = 25
     epochs_no_improve = 0
 
     # Training Loop
